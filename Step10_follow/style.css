@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: white;
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    max-width: 1100px;
+    background-color: transparent;
+    border: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+    background: white;
+}
+
+.logo {
+    width: 110px;
+}
+
+.main-menu {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+    flex: 1;
+}
+
+.main-menu li {
+    margin: 0 10px;
+}
+
+.main-menu a {
+    color: #262626;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.main-menu a:hover {
+    border-bottom: 2px solid #262626;
+}
+
+.right-menu {
+    display: flex;
+    list-style: none;
+}
+
+.right-menu li {
+    margin: 0 10px;
+}
+
+.right-menu a {
+    color: #262626;
+    text-decoration: none;
+}
+
+.showcase {
+    width: 100%;
+    height: 400px;
+    background: white;
+    background-image: url('../img/slide1.png'); 
+    background-position: center top;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    border: none; 
+    background-color: transparent;
+}
+
+.showcase h2 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.showcase p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    margin-top: 20px;
+    background: #378ff5;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.dark {
+    color: white;
+}
+
+.dark .btn {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* 6et8 */
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 40px;
+    background: white;
+    border: none;
+    height: auto;
+    padding: 20px 0;
+}
+
+.home-cards img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-cards h3 {
+    margin-bottom: 5px;
+}
+
+.home-cards p {
+    margin-bottom: 10px;
+}
+
+.home-cards a {
+    display: inline-block;
+    color: #0067b8;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.home-cards a i {
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+}
+
+.home-cards a:hover i {
+    margin-left: 10px;
+}
+
+/* 7 */
+#bigData-intro {
+    width: 100%;
+    height: 350px;
+    background: url('../img/slide2.png') no-repeat center center/cover;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+#bigData-intro .content {
+    width: 40%;
+    color: #262626;
+    padding: 50px 0 0 30px;
+}
+
+#bigData-intro h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+#bigData-intro p {
+    margin: 10px 0 20px 0;
+    line-height: 1.6;
+}
+
+#bigData-intro .btn {
+    margin-top: 10px;
+}
+
+/*9 */
+.ruban {
+    width: 100%;
+    height: 350px;
+    background: url('../img/carbon2.jpg') no-repeat center 80%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.ruban .content {
+    width: 55%;
+    color: white;
+    padding: 80px 0 0 30px;
+}
+
+.ruban h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.ruban p {
+    margin: 10px 0 20px 0;
+    line-height: 1.6;
+}
+
+.ruban .btn {
+    margin-top: 10px;
+}
+
+.dark .btn {
+    background: #03254c;
+    color: white;
+}
+
+/* 10 */
+.follow {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0;
+    border: none;
+    height: auto;
+}
+
+.follow p {
+    margin: 0;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.follow a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.follow span {
+    color: black;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.follow span:hover {
+    color: #0067b8;
+}
+
+
+.links, .sub-footer {
+    background-color: #d3eaac;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
